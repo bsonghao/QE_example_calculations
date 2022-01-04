@@ -1,0 +1,44 @@
+&CONTROL
+  calculation='relax',
+  outdir='.',
+  prefix='calc',
+  pseudo_dir='.',
+  verbosity='high',
+  tstress=.false.,
+  tprnfor=.false.,
+/
+
+&SYSTEM
+  ibrav=0,
+  nat=6,
+  ntyp=2,
+  ecutwfc=80.0d0,
+  ecutrho=300.0d0,
+  nbnd=50,
+  input_dft='PBE',
+/
+
+&ELECTRONS
+  diagonalization='david',
+  conv_thr=1d-08,
+  mixing_mode='plain',
+  mixing_beta=0.700d0,
+/
+
+ATOMIC_SPECIES
+  Li 6.94100d0  Li.pbe-s-van_ak.UPF
+  O  15.99900d0 O.pw91-van_ak.UPF
+ATOMIC_POSITIONS {alat}
+  Li  0.0000d0  0.0000d0  0.0000d0
+  Li  0.5000d0  0.5000d0  0.5000d0
+  O   0.1319d0  0.4144d0  0.0000d0
+  O   0.3681d0  0.9144d0  0.5000d0
+  O   0.6319d0  0.0856d0  0.5000d0
+  O   0.8681d0  0.5856d0  0.0000d0
+CELL_PARAMETERS {angstrom}
+3.986d0 0.000d0 0.000d0
+0.000d0 4.896d0 0.000d0
+0.000d0 0.000d0 2.961d0
+
+K_POINTS {automatic}
+  12 12 12 0 0 0

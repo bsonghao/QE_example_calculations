@@ -1,0 +1,8 @@
+&DOS
+  outdir='.'
+  prefix='calc'
+  Emin=0,
+  Emax=40,
+  DeltaE=0.05
+  fildos='LiO2.dos'
+/
