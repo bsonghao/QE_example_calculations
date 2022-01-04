@@ -1,6 +1,6 @@
 # QE_example_calculations
 
-This repository illustrate procedures to run band structure calculation for solids using Quantum Espresso
+This repository illustrate procedures to run plain-wave DFT calculations for solids using Quantum Espresso
 
 Procedure to compute band structure:
 
@@ -13,3 +13,12 @@ step 3: `bands' calculation: Evaluate the energy eigenvalue upon the certain ass
 step 4: `bandx' calculation: Generate plottable data from `bands' calculation
 
 Step 5: Using the Python code `band.py` to read in the outputs from `bandx
+
+Procedure to compute Density of States (DOS):
+
+Step 1: `nscf' calculation: Evaluate the energy eigenvalue based on the k-point grid from scf calculation.
+
+Step 2: `dos' calculation: Integrate over the assign energy interval to generate plottable date of DOS.
+
+Step 3: Using the Python code `dos.py` to read in the outputs from 'dos'
+calculation and make a DOS plot.
