@@ -22,3 +22,6 @@ Step 2: `dos' calculation: Integrate over the assign energy interval to generate
 
 Step 3: Using the Python code `dos.py` to read in the outputs from 'dos'
 calculation and make a DOS plot.
+ 
+ 
+ This website: https://www.materialscloud.org/work/tools/qeinputgenerator offers an user friend interface to generate input file of Quantum Espresso
